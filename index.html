@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <!-- <form> -->
+            <div class="input">
+                <label for="day">day</label>
+                <input type="number" name="day" id="day" placeholder="DD" autocomplete="off">
+                <span class="error-text" id="errDay"></span>
+            </div>
+            <div class="input">
+                <label for="month">month</label>
+                <input type="number" name="month" id="month" placeholder="MM" autocomplete="off">
+                <span class="error-text" id="errMonth"></span>
+            </div>
+            <div class="input">
+                <label for="year">year</label>
+                <input type="number" name="year" id="year" placeholder="YYYY" autocomplete="off">
+                <span class="error-text" id="errYear">This field is required</span>
+            </div>
+            <!-- </form> -->
+        </div>
+
+        <div class="button-box">
+            <button type="submit" onclick="submit()">
+                <img src="assets/icon-arrow.svg" alt="">
+            </button>
+            <div class="line"></div>
+        </div>
+
+        <div class="bottom-box">
+            <div class="answer-box">
+                <span id="year-ans">- -</span>
+                <span class="year-text">years</span>
+            </div>
+
+            <div class="answer-box">
+                <span id="month-ans">- -</span>
+                <span class="month-text">months</span>
+            </div>
+
+            <div class="answer-box">
+                <span id="day-ans">- -</span>
+                <span class="day-text">days</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
